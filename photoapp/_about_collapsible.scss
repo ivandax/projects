@@ -1,0 +1,54 @@
+.content_about{
+    @include flex-complete($direction: column, $justify: center, $align: center);
+
+    @media only screen and (min-width: $desktop){
+        @include flex-complete($direction: row, $justify: flex-start, $align: flex-start);
+      }       
+}
+
+.collapsible_area{
+    @include flex-complete($direction: column, $justify:center, $align:flex-start);
+    width:90%;
+    margin: auto;
+    padding-top: 15px;
+    // align-items: center;
+    @media only screen and (min-width: $desktop){
+        margin-top: 30px;
+        padding-left:15px;
+        width:60%
+      }  
+}
+
+.collapsible_title{
+    @include flex-complete($direction: column, $justify:center, $align:flex-start);
+}
+
+.collapsible_block{
+    border: solid gray 1px;
+    border-radius: 5px;
+    margin-top:10px;
+    .collapsible_checkbox{
+        display:none;
+
+
+        &:checked + label + .cbtext{
+            max-height:350px; //this allows for the collapsible to open and close
+        }
+    }
+    label{
+        h3{
+            background-color: lightgrey;
+            padding:5px 0 5px 3px;                
+        }
+    }
+    .cbtext{
+        max-height: 0px;
+        overflow:hidden;
+        transition: max-height 0.25s ease-in-out;
+        padding: 0 3px 0 3px;
+    }
+
+}
+
+
+

@@ -1,0 +1,32 @@
+.content_contact{
+    @include flex-complete($direction: column, $justify: flex-start, $align: flex-start);
+    @media only screen and (min-width: $desktop){
+        @include flex-complete($direction: row, $justify: center, $align: flex-start);
+      }  
+}
+
+.form_area{
+    margin-left: 10px;
+    @media only screen and (min-width: $desktop){
+        width:60%;
+      }  
+}
+
+.contact_form{
+    @include flex-complete($direction: column, $justify: flex-start, $align: flex-start);
+    label{
+        font-weight: bold;
+        margin-top:10px;
+    }
+    input, textarea{
+        width:95%;
+        padding:5px;
+        margin-top:10px;
+        border-radius: 5px;
+        border: solid 1px lightgrey;
+    }
+    #submit_button{
+        width: auto;
+        padding:10px;
+    }
+}

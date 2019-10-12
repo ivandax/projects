@@ -1,0 +1,77 @@
+
+ /* ivan's hero sass*/
+
+ .hero{
+    @include flex-complete($direction: column, $justify: center, $align: center);
+  
+    background-color: lightgrey;
+    background-image: url("img/site_showcase_bg.jpg");
+    background-size: cover;
+  
+    @media only screen and (min-width: $desktop){
+      @include flex-complete($direction: row, $justify: center, $align: center);
+    }
+  }
+  
+  .hero_container{
+    @include flex-complete($direction: column, $justify: center, $align: center);
+  
+    width: 100%;
+    @media only screen and (min-width: $desktop){
+      width:80%;
+      margin-left:10%;
+    }
+  }
+  
+  .hero_title{
+    @include flex-complete($direction: column, $justify: center, $align: center);
+  
+    width:100%;
+    margin-top:240px;
+    h1{
+      margin-bottom: 24px;
+      font-size: 64px;
+      color:white;
+      text-align: center;
+      span{
+        color: $primary;
+      }
+    }
+    p{
+      font-size: 20px;
+      width: 80%;
+      text-align: center;
+      color:white;
+    }
+  }
+  
+  .hero_apps{
+    @include flex-complete($direction: column, $justify: center, $align: center);
+  
+    margin-top:48px;
+    margin-bottom:160px;
+    width:100%;
+  
+    @media only screen and (min-width: $tablet){
+      @include flex-complete($direction: row, $justify: space-evenly, $align: center);
+      margin-bottom: 220px;
+    }
+  }
+  
+  .googleplay{
+    @include flex-complete($direction: column, $justify: center, $align: center);
+  
+    margin-top: 12px;
+    @media only screen and (min-width: $tablet){
+      margin-top: 0px;
+    }  
+  }
+  
+  .hand_container{
+    display:none;
+    @media only screen and (min-width: $desktop){
+      display: flex;
+      align-self: flex-end;
+      width:80%;
+    }    
+  }

@@ -1,0 +1,36 @@
+
+// Content
+
+.content{
+    margin: 48px auto;
+    @media only screen and (min-width: $tablet){
+      display: flex;
+      flex-wrap: wrap;
+      max-width: $desktop-wide;
+    }
+    .item{
+      border: 1px solid #EBEBEB;
+      padding: 4px;
+      border-radius: 3px;
+      margin: 24px;
+      @media only screen and (min-width: $tablet){
+        width: calc(50% - 58px);
+      }
+      @media only screen and (min-width: $desktop){
+        width: calc(33.33% - 58px);
+      }
+      img{
+        width: 100%;
+      }
+      .item-box{
+        padding: 16px;
+      }
+      h3{
+        font-size: 18px;
+      }
+      p{
+        font-size: 14px;
+        margin-bottom: 16px;
+      }
+    }
+  }

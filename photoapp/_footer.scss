@@ -1,0 +1,25 @@
+footer{
+    background-color: #333;
+    padding: 24px;
+    text-align: center;
+    @media only screen and (min-width: $desktop){
+        display: flex;
+        @include flex-justify();
+        
+    }
+    nav{
+        text-align: center;
+    }
+    a{
+        color: white;
+        margin: 8px;
+    }
+    .legal{
+        color: white;
+        font-size: 14px;
+        margin-top: 16px;
+        @media only screen and (min-width: $desktop){
+            margin: 0;
+        }
+    }
+}

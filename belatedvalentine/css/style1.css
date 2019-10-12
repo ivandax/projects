@@ -1,0 +1,292 @@
+html{box-sizing:border-box; font-family: sans-serif;}
+body{max-width: 100%;}
+h1{font-size:36px;}
+h2{font-size:30px;}
+h3{font-size:24px;}
+h4{font-size:20px;}
+h5{font-size:18px;}
+h6{font-size:16px;}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	
+	max-width:100%;
+}
+
+/*Style for the Side-Screen Nav*/
+
+.mobile_nav{
+	display: flex;
+	flex-direction:row;
+	position:fixed;
+	top:0;
+	left:-100%;	
+	width:80%;
+	transition-duration: 0.4s;
+	z-index: -3;
+}
+
+.mobile_nav.mobile_nav_show{
+	display: flex;
+	flex-direction:row;
+	position:fixed;
+	top:0;
+	left:0;	
+	width:80%;
+	transition-duration: 0.4s;
+	z-index: 3;
+}
+
+.mobile_nav_container{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	width:100%;
+	height:100vh;
+	overflow: hidden;
+}
+
+.mobile_nav_level{
+	padding: 10px;
+	width:100%;
+	overflow: hidden;
+}
+
+.mobile_nav_level img{
+	width:40%;
+}
+
+.mobile_nav_level nav{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width:100%;
+	overflow: hidden;
+}
+
+.mobile_nav_level nav a{
+	padding: 15px;
+	width:100%;
+	text-decoration: none;
+}
+
+.mobile_nav_level nav a:hover{
+	background-color: #ccc;
+}
+
+.mobile_overlay{
+	width: 100%;
+	height:0vh;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color: rgb(132, 132, 130);
+	
+    opacity: 0;
+	z-index: -3;
+	transition: opacity 0.4s;
+}
+
+/*overlay between side screen nav and main content*/
+
+.mobile_overlay.mobile_nav_show{
+	width: 100%;
+	height:100vh;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color: rgb(132, 132, 130);
+	
+    opacity: 0.5;
+	z-index: 2;
+	transition: opacity 0.4s;
+}
+/*Style for the main body in mobile display*/
+
+.mobile_header{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width:100%;
+}
+
+.mobile_header_level{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.mobile_header_menuToggle{
+	padding: 8px;
+	font-size: 36px!important;
+}
+
+.mobile_header_icon{
+	border-radius:50%;
+    width: 65px;
+	margin-right: 20px;
+}
+
+.mobile_header_title{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.mobile_photo_grid{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
+	width: 95%;
+}
+
+.mobile_photo_about{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
+	width: 95%;
+}
+
+.mobile_photo_grid a img{
+	width: 100%;
+}
+
+.mobile_photo_about a{
+	margin-bottom: 2%;
+	margin-left: 2%;
+	color: black;
+	font-weight: bold;
+	width: 50%;
+}
+
+.mobile_clickable_photo:hover{
+	opacity: 0.6;
+}
+
+.mobile_photo_caption{
+	margin-top:10px;
+}
+
+.mobile_photo_caption > a{
+	text-decoration:underline;
+	font-weight: bold;
+	color: black;
+}
+
+.mobile_photo_caption > a:hover, .mobile_photo_about a:hover{
+	transition: 0.3s;
+	color: white;
+	background-color: black;
+}
+
+
+.mobile_separator{
+    margin-top:20px
+}
+
+.mobile_about_image{
+    width:50%;
+    margin: 0 auto;
+}
+
+.mobile_about_p{
+    padding:2%;
+    background-color:white;
+}
+
+/*media queries for medium screens*/
+
+@media (min-width:600px){
+	
+	.mobile_photo_grid{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-content: flex-start;
+		width: 100%;
+	}	
+	
+	.mobile_photo_grid_block{
+		width: 100%;
+		margin: 1%;
+	}
+	
+	.mobile_about_image{
+    width:33%;
+    margin: 0 auto;
+	}
+}
+	
+/*media queries for large screens*/
+
+@media (min-width:900px){
+	
+	body{
+		max-width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+	.mobile_header_menuToggle{
+		display: none;
+	}
+	
+	.mobile_header_icon{
+		display:none;
+	}
+	
+	.mobile_nav{
+		position:fixed;
+		top:0;
+		left:0;	
+		width:300px;
+		z-index: 1;
+    }
+	
+	/*Check this later, this is overriding the effect of toggling the class and there should be a simpler way. Now I am only copying the same settings from above*/
+	.mobile_nav.mobile_nav_show{
+		width:300px;
+	}
+	
+    .main{
+		width:75%;
+		margin-left: 300px;
+	}
+	
+	/*this eliminates the overlay on large screens*/
+	.mobile_overlay{
+		display: none;
+	}
+	
+	.mobile_header_title{
+		justify-content: flex-start;
+		margin-left: 1%;
+	}
+	
+	.mobile_about_image{
+    width:25%;
+    margin: 0 auto;
+	}
+	
+}
+
+/*colors*/
+.back_liteblue{background-color: rgb(190, 228, 244);}
+.back_white{background-color: white;}
+.back_color_neutral{background-color: rgb(132, 132, 130); opacity: 0.5;}
+
+/*borders*/
+.thin_black_border{
+	border: solid 1px;
+}

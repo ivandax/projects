@@ -1,0 +1,63 @@
+
+/*CLASSES*/
+
+.row{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	height: 60px;
+}
+
+.cb{
+	background-color: #ffe6b3;
+	font-size: 1.5rem;
+	border-radius: 10px;
+}
+
+.cbSmall{
+	width:25%;
+}
+
+.cbLong{
+	width:50%;
+}
+
+.cbSign{
+	background-color: #ffcc66;
+}
+
+.cbEqual{
+	background-color: #ffa64d;
+}
+
+/*ID*/
+
+#content{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#calculator{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	width: 300px;
+}
+
+#display_screen{
+	background-color: #000066;
+	color: white;
+	height:40px;
+	font-size: 2rem;
+	text-align: right;
+	padding-right: 6px;
+	padding-top: 2px;
+	border-radius: 10px;
+}
+
+#ac, #re{
+	background-color: #d9f2d9;
+}
+
+

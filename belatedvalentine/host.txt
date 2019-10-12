@@ -1,0 +1,18 @@
+    Shared Plan:        Baby
+    Your Control Panel: https://gator4198.hostgator.com:2083
+    Username:           ivandax
+    Domain:             belatedvalentine.com
+    Password:           vUR4HwuuW_JF
+    1st Nameserver:     ns8395.hostgator.com
+    2nd Nameserver:     ns8396.hostgator.com
+    Server IP:          108.167.189.23
+
+
+cpanel: ivandax, Sh25
+billing: 
+database user: ivandax_trial, Sh25
+FTP: blog@belatedvalentine.com, Sh25
+wordpress belatedvalentine: ivandax, slbl28
+http://www.belatedvalentine.com/blog/wp-admin/index.php
+trial mailing list: trial, Sh25
+mail: info@belatedvalentine.com, ranb001
