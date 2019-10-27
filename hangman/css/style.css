@@ -1,0 +1,128 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffff80;
+}
+
+header {
+  background-color: #ffff80;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+main {
+  width: 100%;
+}
+
+.game_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game_container div#image_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+  background-color: white;
+  width: 100%;
+}
+
+.game_container div#image_container img {
+  width: 40%;
+}
+
+@media only screen and (min-width: 764px) {
+  .game_container div#image_container img {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .game_container div#image_container img {
+    width: 250px;
+  }
+}
+
+#guess_form {
+  background-color: #ffff80;
+  width: 100%;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#guess_form #word_to_guess {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#guess_form input {
+  border: solid black 1px;
+  margin: 1%;
+  padding: 1rem;
+}
+
+#guess_form #status {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+#guess_form button {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h3>Rock, Paper, Scissors</h3>
+        <img src="images/rps.png" alt="rock, paper, scissors">
+    </header>
+    <main>
+        <div id="content">
+            <div class="results">
+                <div class="results_overall">
+                    <h4>Overall Results</h4>
+                    <div>
+                        <span>Games Played: </span><span id="gamesPlayed">0</span>
+                    </div>
+                    <div>
+                        <span>Score Hand 1: </span><span id="score1">0</span>
+                    </div>
+                    <div>
+                        <span>Score Hand 2: </span><span id="score2">0</span>
+                    </div>
+                </div>
+                <div class="results_user">
+                    <h4>Your results</h4>
+                    <div>
+                        <span>Your wins: </span><span id="userWins">0</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4>Statistics</h4>
+                <div>
+                    <span>Rock Wins: </span><span id="freqRock">0 times won. 0%</span>
+                </div>
+                <div>
+                    <span>Paper Wins: </span><span id="freqPaper">0 times won. 0%</span> 
+                </div>
+                <div>
+                    <span>Scissors Wins: </span><span id="freqScissors">0 times won. 0%</span>
+                </div>
+                <div>
+                    <span>Ties: </span><span id="freqTie">0 results. 0%</span>
+                </div>
+            </div>
+            <hr>
+            <div class="current_play">
+                <div class="play_text">
+                    <h4>Current Play</h4>
+                    <div><span>1: </span><span id="hand1play">     </span></div>
+                    <div><span>2: </span><span id="hand2play">     </span></div>
+                </div>
+                <div class="play_images">
+                    <img id="imghand1" src="images/pending.png" alt="rock, paper or scissors">
+                    <img id="imghand2" src="images/pending.png" alt="rock, paper or scissors">
+                </div>
+            </div>
+            <hr>
+            <div id="interface">
+                <h4>Random Play</h4>
+                <button id="run">Run</button>
+                <h4>10 Random Plays</h4>
+                <button id="run10">Run 10</button>
+                <h4>Play vs Computer</h4>
+                <button class="play_options" data-play="rock" id="play_rock">Rock</button>
+                <button class="play_options" data-play="paper"  id="play_paper">Paper</button>
+                <button class="play_options" data-play="scissors"  id="play_scissors">Scissors</button>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="js/rpsLogic.js"></script>
+<script src="js/rpsUi.js"></script>
+<script src="js/rps.test.js"></script>
+</html>
