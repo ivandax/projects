@@ -20,14 +20,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffff80;
+  background-color: #404040;
+  color: white;
 }
 
 header {
-  background-color: #ffff80;
+  background-color: #404040;
   width: 100%;
   text-align: center;
   padding: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    padding: 3rem;
+  }
 }
 
 main {
@@ -50,7 +57,25 @@ main {
           align-items: center;
 }
 
-.game_container div#image_container {
+@media only screen and (min-width: 1024px) {
+  .game_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.game_container .game_display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,29 +89,63 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .game_container .game_display {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.game_container .game_display div#image_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
   width: 100%;
 }
 
-.game_container div#image_container img {
-  width: 40%;
+.game_container .game_display div#image_container img {
+  width: 150px;
 }
 
 @media only screen and (min-width: 764px) {
-  .game_container div#image_container img {
-    width: 150px;
+  .game_container .game_display div#image_container img {
+    width: 200px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .game_container div#image_container img {
+  .game_container .game_display div#image_container img {
     width: 250px;
   }
 }
 
-#guess_form {
-  background-color: #ffff80;
+.game_container .game_display #word_to_guess {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  min-height: 2rem;
+}
+
+.game_container .game_display #hint {
+  font-size: 0.8rem;
+}
+
+.game_container #guess_form {
+  background-color: #404040;
   width: 100%;
   padding: 2%;
   display: -webkit-box;
@@ -104,25 +163,52 @@ main {
           align-items: center;
 }
 
-#guess_form #word_to_guess {
-  font-size: 1.5rem;
-  padding-bottom: 0.5rem;
+@media only screen and (min-width: 1024px) {
+  .game_container #guess_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 30%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
-#guess_form input {
+.game_container #guess_form input {
   border: solid black 1px;
-  margin: 1%;
-  padding: 1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 0.3rem;
+  width: 7rem;
 }
 
-#guess_form #status {
-  padding: 1rem;
+.game_container #guess_form #status {
   font-weight: bold;
 }
 
-#guess_form button {
+@media only screen and (min-width: 1024px) {
+  .game_container #guess_form #status {
+    margin-bottom: 2rem;
+  }
+}
+
+.game_container #guess_form button {
   margin-top: 0.5rem;
   font-weight: bold;
   padding: 1rem;
+  width: 100px;
 }
 /*# sourceMappingURL=style.css.map */

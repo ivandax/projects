@@ -4,35 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Deadman</title>
+    <title>Hangman</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header>
-        <h3>Deadman!</h3>
+        <h3>Hangman</h3>
     </header>
 
     <main>
         <div class="game_container">
-            <div id="image_container">
-                <img id="hangman_img" src="images/1.png" alt="hangman progression">
+            <div class="game_display">
+                <div id="image_container">
+                    <img id="hangman_img" src="images/7.png" alt="hangman progression">
+                </div>
+                <div id="word_to_guess"></div>
+                <div id="hint"></div>                
             </div>
             <form id="guess_form" method="" action="#">
-                <div id="word_to_guess">
-
-                </div>
                 <input id="input_guess" type="text" maxlength="1" id="letter_input" />
-                <div id="status"></div>
+                <div id="status">Status displays here.</div>
                 <button id="submit_button" type="submit">Submit</button>
                 <button id="reset_button" type="button">Reset</button>
             </form>
-
         </div>
     </main>
 
 </body>
-<script src="js/functions.js"></script>
-
+<script src="js/options.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/ui.js"></script>
 </html>

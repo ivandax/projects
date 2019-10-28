@@ -1,7 +1,7 @@
 //variables
 $tablet: 764px;
 $desktop: 1024px;
-$primary: #ffff80; 
+$primary: #404040; 
 $lightgrey: #404040;
 
 @mixin flex-complete($direction: row, $justify: space-between, $align: center) {
@@ -21,6 +21,7 @@ $lightgrey: #404040;
 body{
     @include flex-complete(column,flex-start,center);
     background-color: $primary;
+    color:white;
 }
 
 header{
@@ -28,6 +29,9 @@ header{
     width: 100%;
     text-align: center;
     padding:2rem;
+    @media only screen and (min-width: $desktop){
+        padding:3rem;
+    }
 }
 
 main{
@@ -36,47 +40,74 @@ main{
 
 .game_container{
     @include flex-complete(column,flex-start,center);
+    @media only screen and (min-width: $desktop){
+        @include flex-complete(row, center, flex-start)
+    }
 
-    div#image_container{
-        @include flex-complete(column,center,center);
-        padding-bottom: 2rem;
-        background-color: white;
-        width:100%;
-        img{
-            width:40%;
-            @media only screen and (min-width: $tablet){
+    .game_display{
+        @include flex-complete(column, center, center);
+        @media only screen and (min-width: $desktop){
+            order:2;
+        }        
+
+        div#image_container{
+            @include flex-complete(column,center,center);
+            background-color: white;
+            width:100%;
+            img{
                 width:150px;
+                @media only screen and (min-width: $tablet){
+                    width:200px;
+                }
+                @media only screen and (min-width: $desktop){
+                    width:250px;
+                }
             }
+        }
+        #word_to_guess{
+            font-size: 1.5rem;
+            padding-bottom:0.5rem;
+            padding-top:0.5rem;
+            min-height:2rem;
+        }
+        #hint{
+            font-size:0.8rem;
+        }  
+    }
+
+    #guess_form{
+        background-color: $primary;
+        width:100%;
+        padding:2%;
+        @include flex-complete(column, flex-start, center);
+        @media only screen and (min-width: $desktop){
+            @include flex-complete(column, flex-start, flex-start);
+            width:30%;
+            order:1;
+        }        
+    
+        input{
+            border: solid black 1px;
+            margin-top:0.3rem;
+            margin-bottom:0.3rem;
+            padding-top:0.8rem;
+            padding-bottom:0.8rem;
+            padding-left:0.3rem;
+            width:7rem;
+        }
+        #status{
+            font-weight: bold;
             @media only screen and (min-width: $desktop){
-                width:250px;
+                margin-bottom:2rem;
             }
+        }
+        button{
+            margin-top: 0.5rem;
+            font-weight: bold;
+            padding:1rem;
+            width:100px;
         }
     }
 }
 
-#guess_form{
-    background-color: $primary;
-    width:100%;
-    padding:2%;
-    @include flex-complete(column, flex-start, center);
-
-    #word_to_guess{
-        font-size: 1.5rem;
-        padding-bottom:0.5rem;
-    }
-    input{
-        border: solid black 1px;
-        margin:1%;
-        padding:1rem;
-    }
-    #status{
-        padding:1rem;
-        font-weight: bold;
-    }
-    button{
-        margin-top: 0.5rem;
-        font-weight: bold;
-        padding:1rem;
-    }
-}
 
