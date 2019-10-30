@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sierpinski</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h3>Sierpinski's Triangle</h3>
+    </header>
+
+    <main>
+
+        <div class="content">
+            <div class="info">
+                <h4>About the Experiment</h4>
+                <p>The goal is to showcase how a seemlingly random process can produce a non-random outcome.</p>
+                <hr>
+                <h4>The Process</h4>
+                <p>A die roll yields a random result from 1 to 6.<br>We assign a corner of an imaginary triangle to each pair of results, like this:</p>
+                <ul>
+                    <li>1 or 2 => Corner A</li>
+                    <li>3 or 4 => Corner B</li>
+                    <li>5 or 6 => Corner C</li>
+                </ul>
+                <img src="./images/imaginary.png">
+                <p>Starting from center of the triangle, with each die roll, we will move midway towards the associated corner.</p>
+                <p>We draw a pixel in this spot, and from here, we will repeat the process with the new die roll, so on and so forth.</p>
+                <hr>
+                <p>Hit the 'Run' button to see the magic happen! :)</p>
+            </div>
+
+            <div class="display">
+                <canvas id="area" width="300" height="260">
+                </canvas>
+                <div class="button_area">
+                    <button id="run">Run</button>
+                    <div class="die_container">
+                        <img id="die" src="images/1.png" alt="die">
+                    </div> 
+                </div>
+            </div>             
+        </div>
+    </main>
+
+</body>
+
+<script src="js/logic.js"></script>
+<script src="js/ui.js"></script>
+
+</html>
