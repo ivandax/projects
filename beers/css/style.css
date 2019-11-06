@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: black;
+    color:white;
+    margin: 0 auto;
+    padding:0.3rem;
+}
+
+.banner{
+    background-image: url("../images/fizz.jpg");
+    height:3rem;
+    background-size: contain;
+}
+
+.links{
+    padding:0.3rem;
+    text-decoration: none;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    margin-left:0.3rem;
+}
+
+@media only screen and (min-width: 900px) {
+    main{
+        width:70%;
+        margin: 0 auto;
+    }
+}
+
+.main_container{
+    display: flex;
+    flex-direction: row;
+
+    width:100%;
+    padding: 0.2rem;
+}
+
+#list{
+    width: 50%;
+}
+
+.beers{
+    padding: 0.2rem 0 0 0.3rem;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.beers:hover{
+    background-color: black;
+    color:white;
+}
+
+#display{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3,h4,h5{
+    padding: 0.3rem 0 0.3rem 0;
+    text-align: center;
+}
+
+#display img{
+    width: 5rem;
+}
+
+@media only screen and (min-width: 900px) {
+    #display{
+        width:60%
+    }
+    
+    #display h3,h4,h5{
+        padding: 1rem 0 1rem 0;
+        text-align: center;
+    }
+
+    #display img{
+        width: 6rem;
+    }
+
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 1rem;
+}
+
+main .pagination button{
+    padding:0.3rem;
+    font-weight: bold;
+}
+
+.prev{
+    display:none;
+}
+
+.prev.show{
+    display:block;
+}
+
+main .pagination div{
+    padding: 0.3rem 0.5rem 0.2rem 0.5rem;
+}
+
+/*SEARCH PAGE*/
+
+#ui-id-1{
+    background-color: white;
+    list-style-type: none;
+}
+
+.search_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.search_area{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.search_area label, input, button{
+    margin-left: 0.3rem;
+    padding:0.3rem;
+}
+
+.display_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display_area img{
+    width:5rem;
+    padding-top:1rem;
+}
+
+.display_area p{
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 900px) {
+    .search_content{
+        flex-direction: row;
+        align-items: flex-start;
+
+    }
+    .search_area{
+        width:40%;
+    }
+}
