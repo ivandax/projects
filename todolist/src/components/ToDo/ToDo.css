@@ -1,0 +1,33 @@
+.toDo{
+    display:flex;
+    flex-direction: row;
+
+    padding: 0.3rem;
+    transition: background-color 0.3s;
+}
+
+.toDo div{
+    width: 100%;
+}
+
+.toDo button{
+    text-decoration: none;
+    border:none;
+    margin: 0.1rem;
+    border-radius: 5px;
+    padding:0.4rem;
+    height: 2rem;
+}
+
+.toDo.Green{
+    background-color:#b3ffb3;
+}
+
+.doneButton{
+    background-color: #4CAF50;
+}
+
+.trashButton{
+    background-color: #f44336;;
+}
+
