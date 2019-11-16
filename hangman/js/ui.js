@@ -17,12 +17,14 @@ const updateFromObject = (obj) => {
 //Execution
 
 var game = new Hangman();
-//console.log(game);
+console.log(game);
 get("word_to_guess").innerHTML = game.placeholder.split("").join(" ");
 get("hint").innerHTML = `Hint: ${game.word[1]}`
 
 //on player submitting a letter, do this...
-get('guess_form').addEventListener('submit',()=>{
+get('guess_form').addEventListener('submit',(event)=>{
+    event.preventDefault();
+    console.log("added event listener for submit")
     game.processInput(get("input_guess").value); //this will run the function and modifies the object state
     updateFromObject(game);
     //console.log(game);
