@@ -1,0 +1,21 @@
+@import '../../style/variables.scss';
+
+.movieList{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media only screen and (min-width:$tablet){
+        width:90%;
+        margin: 0 auto;
+    }
+
+    hr{
+        width:95%;
+        background-color:$borders;
+        height:3px;
+        margin:0.5rem;
+        border:none;
+    }
+}

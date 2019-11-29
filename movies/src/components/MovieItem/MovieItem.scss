@@ -1,0 +1,76 @@
+@import '../../style/variables.scss';
+
+
+.movieItem{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+
+    width:10rem;
+    margin: 0.2rem;
+    padding: 0.3rem;
+    border-radius: 8px;
+
+    @media only screen and (min-width:$tablet){
+        width:12rem;
+    }
+
+    &:hover{
+        background-color: #000033;
+        transition: background-color 0.5s;
+
+        a{
+            h3{
+                background-color: #000033;
+                transition: background-color 0.5s;
+                color:$primary;
+            }
+        }
+
+    }
+
+    a{
+        border-radius: 5px;
+    
+        h3{
+            text-align: center;
+            padding:0.2rem;
+            border-radius: 5px;
+        }
+    }
+
+    img{
+        width: 8rem;
+        margin-bottom:0.3rem;
+
+        @media only screen and (min-width:$tablet){
+            width:10rem;
+        }
+    }
+
+    button{
+        padding:0.3rem;
+        border: none;
+        border-radius: 5px;
+        background-color: $secondary;
+        margin-top:0.2rem;
+        margin-bottom:0.3rem;
+    }
+}
+
+.movieItem.fav{
+    background-color: $fav;
+
+    h3{
+        background-color: $fav;
+
+        
+    }
+
+    &:hover{
+        h3{
+            background-color: $fav;
+        }
+    }
+}
