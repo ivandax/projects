@@ -2,6 +2,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+ * App built using React Hooks, React Router.
+ * Responsive Design with Sass.
+ * Connect to external movie API using axios.
+
+## Available Scripts
+
 In the project directory, you can run:
 
 ### `npm start`
