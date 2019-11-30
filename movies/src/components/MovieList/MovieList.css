@@ -1,0 +1,30 @@
+.movieList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 764px) {
+  .movieList {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.movieList hr {
+  width: 95%;
+  background-color: #00001a;
+  height: 3px;
+  margin: 0.5rem;
+  border: none;
+}
+/*# sourceMappingURL=MovieList.css.map */

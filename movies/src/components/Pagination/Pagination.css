@@ -1,0 +1,32 @@
+.Pagination {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.Pagination button {
+  border: none;
+  background-color: #0059b3;
+  padding: 0.5rem;
+  margin: 0.3rem;
+  text-align: center;
+  border-radius: 10px;
+  width: 4.5rem;
+  font-weight: bold;
+}
+
+.Pagination div {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=Pagination.css.map */

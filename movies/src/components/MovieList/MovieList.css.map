@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAA;EACN,OAAO,EAAC,IAAI;EACZ,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,MAAM;CAc1B;;AAZG,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EAN5C,AAAA,UAAU,CAAA;IAOF,KAAK,EAAC,GAAG;IACT,MAAM,EAAE,MAAM;GAUrB;;;AAlBD,AAWI,UAXM,CAWN,EAAE,CAAA;EACE,KAAK,EAAC,GAAG;EACT,gBAAgB,ECbd,OAAO;EDcT,MAAM,EAAC,GAAG;EACV,MAAM,EAAC,MAAM;EACb,MAAM,EAAC,IAAI;CACd",
+    "sources": [
+        "MovieList.scss",
+        "../../style/variables.scss"
+    ],
+    "names": [],
+    "file": "MovieList.css"
+}

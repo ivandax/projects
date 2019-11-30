@@ -1,0 +1,81 @@
+.movieItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10rem;
+  margin: 0.2rem;
+  padding: 0.3rem;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 764px) {
+  .movieItem {
+    width: 12rem;
+  }
+}
+
+.movieItem:hover {
+  background-color: #000033;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.movieItem:hover a h3 {
+  background-color: #000033;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  color: #66b3ff;
+}
+
+.movieItem a {
+  border-radius: 5px;
+}
+
+.movieItem a h3 {
+  text-align: center;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.movieItem img {
+  width: 8rem;
+  margin-bottom: 0.3rem;
+}
+
+@media only screen and (min-width: 764px) {
+  .movieItem img {
+    width: 10rem;
+  }
+}
+
+.movieItem button {
+  padding: 0.3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0059b3;
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.movieItem.fav {
+  background-color: #003300;
+}
+
+.movieItem.fav h3 {
+  background-color: #003300;
+}
+
+.movieItem.fav:hover h3 {
+  background-color: #003300;
+}
+/*# sourceMappingURL=MovieItem.css.map */
