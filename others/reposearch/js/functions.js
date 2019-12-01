@@ -28,7 +28,7 @@ const listRepos = (array) => {
         link.setAttribute("href",repo.html_url);
         link.setAttribute("target","_blank");
         repoDetail.appendChild(link);
-        repoDetail.appendChild(createElement("span",repo.stargazers_count))
+        repoDetail.appendChild(createElement("span",`★ ${repo.stargazers_count}`))
         list.appendChild(repoDetail);
     })
 }
