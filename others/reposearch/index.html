@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Marfeel Repo Search</title>
+    <title>Repo Search</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -15,36 +15,24 @@
                 <input id="input" placeholder="Search username..." type=text />
                 <button type="submit">Search</button>
             </form>
-            <div class="success">
+            <div class="success" id="success">
                 <div class="info">
-                    <img src="./images/github.png">
+                    <img id="avatar" src="./images/github.png">
                     <div class="details">
-                        <span>@username</span>
-                        <h2>Name of Person</h2>
-                        <p>this is the bio</p>
+                        <span id="username">@username</span>
+                        <h2 id="name">Name of Person</h2>
+                        <p id="desc">this is the bio</p>
                     </div>
                 </div>
                 <div class="repos">
                     <h3>Repositories</h3>
                     <hr id="division">
-                    <ul>
-                        <li>
-                            <div>Item 1</div>
-                            <div>Shared</div>
-                        </li>
-                        <hr>
-                        <li>
-                            <div>Item 2</div>
-                            <div>Shared</div>
-                        </li>
-                        <hr>
-                        <li>
-                            <div>Item 3</div>
-                            <div>Shared</div>
-                        </li>
-                        <hr>
+                    <ul id="repoList">
                     </ul>
                 </div>
+            </div>
+            <div class="fail" id="fail">
+                <div>Does not exist</div>
             </div>
 
         </div> 
@@ -53,5 +41,6 @@
     </main>
     
 </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="./js/functions.js"></script>
 </html>

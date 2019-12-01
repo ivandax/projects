@@ -9,6 +9,7 @@
 }
 
 ul{list-style-type: none;}
+a{text-decoration: none;}
 
 //variables
 
@@ -69,7 +70,7 @@ ul{list-style-type: none;}
 }
 
 .success{
-    @include flex-all($direction: column, $justify: flex-start, $align:flex-start);
+    display: none;
 
     margin-left: 1.5rem;
     margin-top: 1rem;
@@ -133,4 +134,30 @@ ul{list-style-type: none;}
             background-color: gray;
         }
     }
+}
+
+.fail{
+    display:none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width:100%;
+    margin-left: 1.5rem;
+    div{
+        width:80%;
+        background-color: #ffcccc;
+        color:#660000;
+        padding-top:0.6rem;
+        padding-bottom:0.6rem;
+        padding-left:0.4rem;
+        border: 1px solid #660000;
+        border-radius: 4px;
+    } 
+}
+
+.success.show{
+    @include flex-all($direction: column, $justify: flex-start, $align:flex-start);
+}
+
+.fail.show{
+    @include flex-all($direction: column, $justify:flex-start, $align:flex-start);
 }

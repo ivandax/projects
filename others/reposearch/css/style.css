@@ -11,6 +11,10 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,19 +94,7 @@ ul {
 }
 
 .success {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  display: none;
   margin-left: 1.5rem;
   margin-top: 1rem;
   width: 82.5%;
@@ -214,5 +206,56 @@ ul {
 .repos ul hr {
   size: 1px;
   background-color: gray;
+}
+
+.fail {
+  display: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  margin-left: 1.5rem;
+}
+
+.fail div {
+  width: 80%;
+  background-color: #ffcccc;
+  color: #660000;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.4rem;
+  border: 1px solid #660000;
+  border-radius: 4px;
+}
+
+.success.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.fail.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 /*# sourceMappingURL=style.css.map */
