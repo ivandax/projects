@@ -1,0 +1,119 @@
+/*resets*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+/*basic positioning of elements*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    padding-top: 50px;
+}
+
+.block{
+    /*for positioning*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    margin-bottom: 50px;
+
+    border-radius: 20px;
+}
+
+/*sections*/
+.container-1{
+    background-color: #cce6ff;   
+}
+
+.block-1{
+    background-color: #cce6ff;
+
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+
+.container-2{
+    background-color: #cce6ff;   
+}
+
+.block-2{
+    background-color: #cce6ff;
+
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+
+.container-3{
+    background-color: #ff8080   
+}
+
+.block-3{
+    background-color: #ff8080;
+
+    box-shadow: 
+    12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+}
+
+.container-4{
+    background-color: #ff8080   
+}
+
+.block-4{
+    background-color: #ff8080;
+
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+
+}
+
+.container-5{
+    background-color: #ffff66  
+}
+
+.block-5{
+    background-color: #ffff66;
+
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+}
+
+.block-5:hover{
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+}
+
+.container-6{
+    background-color: #ffff66  
+}
+
+.block-6{
+    background-color: #ffff66;
+
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+}
+
+.block-6:hover{
+    background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+}
