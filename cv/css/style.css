@@ -6,6 +6,7 @@ p,li{font-size: 14px; color:#333333;}
 h5{font-size: 15px; color:#333333;}
 h4{font-size: 16px; color:#333333;}
 footer{width:100%;}
+a{text-decoration: none;}
 
 
 /*CLASSES*/
@@ -13,6 +14,7 @@ footer{width:100%;}
 .displayColumn{
 	display: flex;
 	flex-direction: column;
+	border-radius: 4px;
 }
 
 .displayJustify{
@@ -20,7 +22,7 @@ footer{width:100%;}
 }
 
 .displayWrap{
-	flex-wrap: : wrap;
+	flex-wrap: wrap;
 }
 
 .displayAlignCenter{
@@ -33,6 +35,7 @@ footer{width:100%;}
 
 .fancyBorder{
 	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 4px;
 }
 
 .progressBar{
@@ -62,16 +65,16 @@ footer{width:100%;}
 	margin: 0 auto;
 }
 
-#summary{
-}
-
 #summary_photo{
 	width:100%;
 	margin-left: 0px;
 }
 
+
+
 #summary_photo img{
 	width:100%;
+	border-radius: 4px 4px 0 0;
 }
 
 
@@ -99,7 +102,7 @@ footer{width:100%;}
 
 #progressJavascript{width:90%;}
 #progressHTML{width:90%;}
-#progressReact{width:70%;}
+#progressReact{width:80%;}
 #progressPHP{width:30%;}
 #progressPython{width:40%;}
 #progressEnglish{width:100%;}
@@ -129,4 +132,4 @@ footer{width:100%;}
 		margin-top: 0px;
 		width:800px;
 	}
-
+}
